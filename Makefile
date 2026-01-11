@@ -36,6 +36,10 @@ env-init-attn:
 env-init-wan22:
 	@conda run --no-capture-output --live-stream --name "$(CONDA_ENV_NAME)" --cwd "$(ROOT)/wan22" \
 		pip install -r requirements.txt
+	@conda run --no-capture-output --live-stream --name "$(CONDA_ENV_NAME)" --cwd "$(ROOT)/wan22" \
+		pip install -r requirements_animate.txt
+	@conda run --no-capture-output --live-stream --name "$(CONDA_ENV_NAME)" --cwd "$(ROOT)/wan22" \
+		pip install -r requirements_s2v.txt
 
 .PHONY: env-update
 env-update:

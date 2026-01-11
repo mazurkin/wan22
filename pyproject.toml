@@ -27,6 +27,9 @@ transformers = {version = "4.49.0", extras=["torch"]}
 
 [tool.poetry.group.utils.dependencies]
 psutil = "7.2.1"
+decord = "0.6.0"
+librosa = "0.11.0"
+llvmlite = "0.46.0"
 
 [build-system]
 requires = ["poetry-core"]

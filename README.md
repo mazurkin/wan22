@@ -56,7 +56,7 @@ $ export CUDA_VISIBLE_DEVICES=0
 ```shell
 # render video based on the prompt only (Wan2.1-T2V-14B)
 $ bin/generate.sh \
-    --ckpt_dir "models/Wan2.1-T2V-14B" \
+    --ckpt_dir "models/Wan2.2-T2V-14B" \
     --task t2v-14B \
     --size 1280*720 \
     --prompt 'Two anthropomorphic cats in comfy boxing gear and bright gloves fight intensely on a spotlighted stage.'
@@ -65,7 +65,7 @@ $ bin/generate.sh \
 ```shell
 # render video based on the prompt and image (Wan2.1-I2V-14B-480P)
 $ bin/generate.sh \
-    --ckpt_dir "models/Wan2.1-I2V-14B-480P" \
+    --ckpt_dir "models/Wan2.2-I2V-14B-480P" \
     --task i2v-14B \
     --size 1280*720 \
     --image 'assets/aaron_paul.jpg' \
