@@ -1,6 +1,6 @@
-# WAN2.1 bootstrap
+# WAN2.2 bootstrap
 
-allows to run WAN2.1 from command line on Linux
+allows to run WAN2.2 from command line on Linux
 
 - https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B
 - https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B
