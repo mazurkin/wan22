@@ -70,6 +70,8 @@ $ bin/generate.sh \
     --ckpt_dir "models/Wan2.2-I2V-A14B" \
     --task i2v-A14B \
     --size 1280*720 \
+    --offload_model True \
+    --convert_model_dtype \
     --image 'assets/aaron_paul.jpg' \
     --prompt 'cinematic video of the dark basement filled with the chemical laboratory equipment in spotlit, something is boiling in the big glass vials, the camera is going through the laboratory and then we see the actor Aaron Paul, the camera is coming closer to him, he is turning his face to the camera and yells «Data-science, bitch!» and then smiles wide'
 ```
