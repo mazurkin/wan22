@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "wan22-environment"
+version = "0.1.0"
+description = "wan22 project"
+authors = ["Nick Mazurkin <mazurkin@gmail.com>"]
+readme = "README.md"
+
+[[tool.poetry.source]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu124"
+priority = "explicit"
+
+[tool.poetry.dependencies]
+python = "3.12.12"
+
+[tool.poetry.group.platform.dependencies]
+setuptools = "80.3.1"
+
+[tool.poetry.group.pytorch.dependencies]
+torch = {version = "2.4.0+cu124", source="pytorch"}
+torchaudio = { version = "2.4.0+cu124", source="pytorch"}
+torchvision = {version = "0.19.0", source="pytorch"}
+
+[tool.poetry.group.huggingface.dependencies]
+huggingface_hub = {version = "0.36.0", extras=["cli"]}
+transformers = {version = "4.49.0", extras=["torch"]}
+
+[tool.poetry.group.utils.dependencies]
+psutil = "7.2.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
